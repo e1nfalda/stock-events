@@ -1,0 +1,45 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "eventType": "corporate_report",
+      "eventSubType": "fixed",
+      "effectSide": "individual_stock",
+      "stockCode": "600000",
+      "stockName": "浦发银行",
+      "weight": 80,
+      "weightAlgo": "all_the_same",
+      "effectStartTime": "2024-02-01T09:00:00",
+      "effectMilestone": "2024-02-15T16:30:00"
+    },
+    {
+      "id": 2,
+      "eventType": "holiday",
+      "effectSide": "market",
+      "weight": -30,
+      "weightAlgo": "all_the_same",
+      "effectStartTime": "2024-01-21T00:00:00",
+      "effectMilestone": "2024-01-27T23:59:59"
+    },
+    {
+      "id": 3,
+      "eventType": "policy",
+      "effectSide": "industry",
+      "weight": 60,
+      "weightAlgo": "all_the_same",
+      "effectStartTime": "2024-02-05T14:30:00",
+      "effectMilestone": "2024-03-05T14:30:00"
+    },
+    {
+      "id": 4,
+      "eventType": "announcement",
+      "effectSide": "individual_stock",
+      "stockCode": "000001",
+      "stockName": "平安银行",
+      "weight": 40,
+      "weightAlgo": "all_the_same",
+      "effectStartTime": "2024-02-10T09:30:00",
+      "effectMilestone": "2024-02-10T15:00:00"
+    }
+  ]
+}

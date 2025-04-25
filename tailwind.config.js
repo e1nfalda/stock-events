@@ -2,19 +2,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Algolia风格主色
         primary: {
-          DEFAULT: '#2962FF',
-          light: '#E3F2FD'
+          DEFAULT: '#2563eb', // Original blue-600
+          600: '#2563eb' // Add explicit 600 shade
         },
-        // 专业灰阶
+        blue: {
+          DEFAULT: '#2563eb',
+          light: '#bfdbfe'
+        },
         gray: {
-          50: '#FAFAFA',
-          100: '#F5F5F5',
-          200: '#EEEEEE',
-          300: '#E0E0E0',
-          800: '#424242',
-          900: '#212121'
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          300: '#d1d5db',
+          800: '#1f2937',
+          900: '#111827'
         }
       },
       boxShadow: {
@@ -22,5 +24,14 @@ module.exports = {
         hover: '0 4px 12px rgba(0,0,0,0.1)'
       }
     }
+  },
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+  ],
+  // Add dark mode and container configuration
+  darkMode: 'class',
+  corePlugins: {
+    container: false
   }
 }
